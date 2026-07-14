@@ -63,7 +63,12 @@ Institute of Technology and a bachelor's in Automation from South China
 University of Technology. I serve on technical program committees and review
 for IEEE/ACM venues including INFOCOM, MobiCom ImmerCom, and IEEE IoT Journal.
 
-<p class="stack">
-Python · C/C++ · Go · PyTorch · TensorFlow · TensorRT · DeepStream · Docker ·
-O-RAN / OpenAirInterface / Open5GS · NS-3 · Linux · NVIDIA Jetson
-</p>
+<div class="stack">
+<p><strong>Core:</strong> Python · Go · C/C++ · PyTorch · TensorRT ·
+reinforcement &amp; federated learning · Docker · Linux ·
+5G/O-RAN (OpenAirInterface, Open5GS) · SDN · distributed edge–cloud systems</p>
+<p><strong>Currently building with:</strong> LLM APIs · RAG &amp; embeddings ·
+tool-using agents · evals · vLLM inference serving · FastAPI ·
+PostgreSQL/pgvector · Kubernetes · Terraform · AWS EKS · Prometheus ·
+OpenTelemetry</p>
+</div>

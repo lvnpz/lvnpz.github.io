@@ -15,18 +15,18 @@ Full list on [Google Scholar](https://scholar.google.com/citations?hl=en&user=Ed
 
 ## Selected publications
 
-- **Demonstration of Automated ML-Driven Energy-Efficient Spectrum
-  Defragmentation for Optical Transport Networks**
+- **[Demonstration of Automated ML-Driven Energy-Efficient Spectrum
+  Defragmentation for Optical Transport Networks](https://ieeexplore.ieee.org/abstract/document/11046799)**
   <br>V. Q. Pham, H. T. Thieu, K. Deng, and N. Choi
   <br><em>Optical Fiber Communications Conference and Exhibition (OFC), 2025</em>
 
-- **PSASlicing: Perpetual SLA-Aware Reinforcement Learning for O-RAN Slice
-  Management**
+- **[PSASlicing: Perpetual SLA-Aware Reinforcement Learning for O-RAN Slice
+  Management](https://ieeexplore.ieee.org/abstract/document/10901152)**
   <br>M. Yin, Yang Deng, A. Kak, N. Choi, and T. Han
   <br><em>IEEE Global Communications Conference (GLOBECOM), 2024</em>
 
-- **Distributed Intelligence: Exploring Federated Paradigms Across Computing
-  and Networking on the Edge**
+- **[Distributed Intelligence: Exploring Federated Paradigms Across Computing
+  and Networking on the Edge](https://www.proquest.com/openview/7d8a4b68e26c6e63b24c28c6e67bccb8/1?pq-origsite=gscholar&cbl=18750&diss=y)**
   <br>Yang Deng
   <br><em>Ph.D. Dissertation, New Jersey Institute of Technology, 2023</em>
 
@@ -34,8 +34,8 @@ Full list on [Google Scholar](https://scholar.google.com/citations?hl=en&user=Ed
   <br>Yang Deng, Tao Han, and N. Ansari
   <br><em>IEEE Open Journal of the Computer Society, vol. 1, pp. 62–72, 2020</em>
 
-- **Demo: FLEX: Trading Edge Computing Resources for Federated Learning via
-  Blockchain**
+- **[Demo: FLEX: Trading Edge Computing Resources for Federated Learning via
+  Blockchain](https://ieeexplore.ieee.org/abstract/document/9484628)**
   <br>Yang Deng, Tao Han, and Ning Zhang
   <br><em>IEEE International Conference on Computer Communications (INFOCOM), 2021</em>
 
