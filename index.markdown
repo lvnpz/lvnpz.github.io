@@ -22,10 +22,13 @@ layout: home
 
 - **AI infrastructure & distributed ML** — federated learning across edge
   networks, reinforcement learning agents that manage live network slices, and
-  ML-driven optimization running inside optical transport systems.
+  ML-driven optimization running inside optical transport systems. Currently
+  building an SLO-aware, multi-tenant LLM inference-serving control plane
+  (vLLM/SGLang on NVIDIA DGX Spark).
 - **Networked systems engineering** — end-to-end 5G/O-RAN stacks
-  (OpenAirInterface, Open5GS, near-/non-RT RIC xApps and rApps), edge–cloud
-  architectures, and low-latency delivery for interactive XR.
+  (OpenAirInterface, Open5GS, near-/non-RT RIC xApps and rApps), WebRTC/RTP
+  internals down to a modified libwebrtc, edge–cloud architectures, and
+  low-latency delivery for interactive XR.
 - **Forward deployment** — turning research into systems that work outside the
   lab: a multi-institution NSF project demonstrated live at the University of
   Michigan, and system demos at OFC and IEEE INFOCOM.
@@ -37,11 +40,14 @@ layout: home
   Nokia Patent Board (2025); expert reviewers assessed it as the first XR
   streaming solution to combine network- and application-layer optimization,
   with direct relevance to Nokia's MantaRay RIC and AI-RAN product lines.
-- Key contributor to the **NSF "Breaking Low" project** (~$3.5M, with the
-  University of Michigan, USC, Columbia, and Duke): built a fully interactive
-  real-time XR application and the 5G/O-RAN mechanism that recognizes and
-  prioritizes the latency-critical parts of a live XR stream, then demonstrated
-  the complete end-to-end system at Michigan in 2026.
+- Key contributor to the **NSF "Breaking Low" / XRNet program** (~$3.5M, with
+  the University of Michigan, USC, Columbia, and Duke): built one of the first
+  open end-to-end implementations of the **3GPP Release-18 PDU Set Marking**
+  RTP extension (TS 26.522) inside a production WebRTC stack (Unity + a
+  modified libwebrtc), showed on a hardware testbed that PDU-Set-aware traffic
+  handling keeps interactive XR smooth under impairment that freezes
+  conventional delivery, and demonstrated the complete system live at Michigan
+  in June 2026.
 - Built **PSASlicing**, an SLA-aware reinforcement-learning system for O-RAN
   slice management (IEEE GLOBECOM 2024), and an ML-driven spectrum
   defragmentation system demonstrated at OFC 2025.
@@ -64,11 +70,12 @@ University of Technology. I serve on technical program committees and review
 for IEEE/ACM venues including INFOCOM, MobiCom ImmerCom, and IEEE IoT Journal.
 
 <div class="stack">
-<p><strong>Core:</strong> Python · Go · C/C++ · PyTorch · TensorRT ·
-reinforcement &amp; federated learning · Docker · Linux ·
-5G/O-RAN (OpenAirInterface, Open5GS) · SDN · distributed edge–cloud systems</p>
-<p><strong>Currently building with:</strong> LLM APIs · RAG &amp; embeddings ·
-tool-using agents · evals · vLLM inference serving · FastAPI ·
-PostgreSQL/pgvector · Kubernetes · Terraform · AWS EKS · Prometheus ·
-OpenTelemetry</p>
+<p><strong>Core:</strong> Python · Go · C/C++ · C# · PyTorch · TensorRT ·
+reinforcement &amp; federated learning · WebRTC/RTP internals (libwebrtc,
+DTLS-SRTP, ICE/STUN/TURN) · 5G/O-RAN (OpenAirInterface, Open5GS) · SDN ·
+Linux tc/netem · Docker · distributed edge–cloud systems</p>
+<p><strong>Currently building with:</strong> LLM inference serving
+(vLLM, SGLang) · SLO-aware scheduling &amp; goodput benchmarking
+(TTFT/TPOT, tail latency) · LLM APIs &amp; evals · Kubernetes · Terraform ·
+Prometheus &amp; Grafana · NVIDIA DGX Spark</p>
 </div>

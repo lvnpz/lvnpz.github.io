@@ -8,21 +8,48 @@ Systems I have designed, built, and shipped — at Nokia Bell Labs (2022–prese
 and during my PhD. Each one spans the full stack: algorithm design,
 infrastructure, and a working end-to-end deployment.
 
+## In progress
+
+### ElasticServe — SLO-aware LLM inference serving control plane
+*Personal project on NVIDIA DGX Spark · 2026*
+
+Building an adaptive, multi-tenant inference-serving control plane that routes
+mixed workloads across vLLM/SGLang model endpoints: admission control and
+backpressure, SLO-aware weighted-fair scheduling, adaptive concurrency, and
+model-residency policy, measured against static baselines on goodput
+(TTFT/TPOT SLOs), tail latency, fairness, and cache efficiency, with
+Prometheus/Grafana observability throughout.
+
 ## Nokia Bell Labs
 
-### Network-aware XR delivery for multi-person tele-rehabilitation
-*NSF "Breaking Low" project (~$3.5M) · Oct 2025 – present*
+### XRNet: network-aware XR delivery over 5G
+*NSF "Breaking Low" program (~$3.5M) · Oct 2025 – present*
 
 Multi-institution project with the University of Michigan (PI), USC, Columbia,
 Duke, and Nokia Bell Labs (Co-PI), targeting motion-to-photon latency
-requirements considered infeasible on today's Internet.
+requirements considered infeasible on today's Internet. My contribution is one
+of the first open end-to-end implementations of the 3GPP Release-18 **PDU Set
+Marking** RTP header extension (TS 26.522) in a production WebRTC stack — so
+every video packet tells the network how important it is.
 
-- Designed and implemented the mechanism that lets a 5G/O-RAN network recognize
-  and prioritize the most latency-critical parts of a live XR stream.
-- Built a fully interactive real-time XR application with a browser-based
-  client, closing the end-to-end user–environment loop.
-- Deployed and demonstrated the complete system on-site at the University of
-  Michigan (June 2026), validating the project's central approach in practice.
+- Implemented the extension across three codebases: Unity's C# application
+  API, its native C++ plugin, and a modified, rebuilt libwebrtc — every RTP
+  packet carries standards-compliant frame-importance and sequencing metadata
+  usable by 5G schedulers, negotiated via SDP.
+- Built a real-time H.264 NAL-parsing classifier (RFC 6184 STAP-A/FU-A aware)
+  that maps keyframes, parameter sets, and reference frames to PDU Set
+  Importance values during packetization of a 1080p/60 fps stream.
+- Delivered the full interactive cloud-XR loop: a Unity-rendered 3D scene
+  streamed over DTLS-SRTP to a stock browser, user input returned through a
+  WebRTC DataChannel, Node.js signaling, and STUN/TURN traversal for operation
+  across a 5G core.
+- Validated at the wire level with Wireshark — byte-exact extension contents
+  on every packet of the encrypted stream — and on a three-node Linux
+  tc/netem testbed whose QoS classifier reads the importance marking directly
+  from packet bytes: PDU-Set-aware handling kept the interactive stream smooth
+  under loss and jitter that froze importance-blind delivery.
+- Demonstrated the complete end-to-end system live at the University of
+  Michigan (June 2026), validating the program's central approach in practice.
 
 ### Edge–cloud scalable 3D Gaussian Splatting delivery
 *Patented · Jun 2025 – Mar 2026*

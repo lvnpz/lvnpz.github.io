@@ -48,8 +48,9 @@ biomedical signal processing, and control systems.
 
 ## Professional service
 
-- **TPC member:** IEEE INFOCOM NG-OPERA workshop 2026 · ACM MobiCom ImmerCom
-  workshop 2026 · IEEE HPSR 2022
+- **TPC member:** IEEE INFOCOM NG-OPERA workshop 2024–2026 · ACM MobiCom
+  ImmerCom workshop 2026 · IEEE ICC Open RAN workshop 2026 · IEEE WCNC Open
+  RAN workshop 2025 · IEEE HPSR 2022
 - **Journal reviewer:** IEEE Internet of Things Journal, IEEE Transactions on
   Cloud Computing, IEEE Transactions on Vehicular Technology, ACM Transactions
   on Cyber-Physical Systems, ICT Express, PLOS ONE
